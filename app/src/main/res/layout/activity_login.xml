@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+
+    android:layout_marginTop="200dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/soft" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShow"
+        android:layout_marginTop="30dp"
+        android:drawableEnd="@drawable/ic_baseline_person_24"
+        android:hint="Username"
+        android:nextFocusForward="@id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:nextFocusForward="@id/btnLogin" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_login_button"
+        android:text="Login" />
+
+
+</RelativeLayout>
